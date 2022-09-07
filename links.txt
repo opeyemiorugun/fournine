@@ -1,0 +1,19 @@
+https://www.facebook.com/FourNine
+
+https://www.youtube.com/channel/UC3vHhUX0DaV5vd-J2dmI3yA
+
+https://www.instagram.com/fournine/
+
+https://www.snapchat.com/discover/Four_Nine_Voices/0739678172
+
+
+@font-face {
+  font-family: "Name of your font";
+  src: url(name-of-font.ttf);
+}
+* {...
+
+
+do nav bar
+do links 
+do javascript-view more and employees

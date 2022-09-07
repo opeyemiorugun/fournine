@@ -1,0 +1,241 @@
+@font-face {
+    font-family: "Playfair_Display_Bold";
+    src: url(Playfair_Display/static/PlayfairDisplay-Bold.ttf);
+}
+@font-face {
+    font-family: "Playfair_Display_SemiBold";
+    src: url(Playfair_Display/static/PlayfairDisplay-SemiBold.ttf);
+}
+@font-face {
+    font-family: "Inter_SemiBold";
+    src: url(Inter/static/Inter-SemiBold.ttf);
+}
+@font-face {
+    font-family: "Inter_Regular";
+    src: url(Inter/static/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: "Inter_Medium";
+    src: url(Inter/static/Inter-Medium.ttf);
+}
+@font-face {
+    font-family: "Inter_Light";
+    src: url(Inter/static/Inter-Light.ttf);
+}
+h1,h2,h3,h4,h5,h6{
+    color: #D33C5C;
+    /* font-family: Playfair_Display_Bold; */
+}
+img{
+    max-width: 100%;
+    /* height: auto; */
+}
+body{
+    background-color: white;
+}
+.first{
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 3em;
+    padding:  4% 7% 5.3% 5.3%;
+}
+.second{
+    background-color: #f2f2f2;
+    display: flex;
+    align-content: space-between;
+    gap: 3em;
+    flex-wrap: wrap;
+    padding: 1.7% 5.3% 5.3% 5.3%;
+}
+.third{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 13% 5.3% ;
+    gap: 4em;
+}
+.four{
+    display: flex;
+    flex-wrap: wrap;
+}
+.eye{
+    flex: 1;
+}
+.about{
+    flex:1;
+    background-color: #ffe7eb;
+}
+.image{
+    flex: 1;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.mission{
+    flex: 1;
+    background-color: aqua;
+}
+.left{
+     flex: 3.5;
+     border: 1px solid white;
+}
+.mid{
+    display: flex;
+    flex: 3.2;
+    flex-direction: column;
+    gap: 0.2em;
+    
+}
+@media(max-width: 800px){
+    first{
+        flex-direction: column;
+    }
+    second{
+        flex-direction: column;
+    }
+    /* center{
+        flex: 1 0 0;
+    } */
+}
+.space{
+    font-size: 16px;
+    margin: 30px 0 0 0;
+    font-family: Inter_Regular;
+}
+.text{
+    display: flex; 
+    flex-flow:column wrap;  
+    width: 88%;
+    
+}
+h1{
+    margin-top: 14px;
+    margin-bottom: 16px;
+}
+.tall{
+    display: flow-root;
+    /* width: 95%; */
+    height: fit-content;
+    margin-bottom: 25px;
+}
+.center{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    flex: 1 0 40%;
+    flex-wrap: wrap;
+    background-color: white;
+    border: 1px solid #f2f2f2;
+    border-radius: 15px 15px 0 0 ;
+    
+}
+/* FONT STYLES */
+/* div,p{
+    font-family: Inter;
+}  */
+.head{
+    font-size: 16px; 
+    font-family: Inter_Regular;
+    margin: 3px 0 0 0; 
+} 
+h1,h3, h4,h5 {
+    font-family: Playfair_Display_Bold;
+}
+h3{
+    font-size: 56px;
+    width: 60%;
+}
+.h4{
+    font-size: 23px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h5{
+    font-size: 34px;
+    margin-top: 14px;
+}
+.date{
+    font-family: Inter-Regular;
+    font-size: 14px;
+    color: #D33C5C;
+    margin-top: 20px;
+}
+button{
+    background-color: #D33C5C;
+    border: #D33C5C;
+    text-align: center;
+    font-family: Inter_Regular;
+    font-size: 20px;
+    opacity: 1;
+}
+.rectangle{
+    width: 338px;
+    height: 181px;
+    border: 2px solid #D33C5C;
+    border-radius: 10px;
+    opacity: 1;
+    align-self:center;
+}
+.big_rectangle{
+    width: 524px;
+    height: 230px;
+    border: 1px solid brown;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    /* flex-wrap: wrap; */
+
+}
+.img1{
+    align-self: flex-start;
+    width: 338px;
+    transform: translate(-0px,20px);
+}
+.img2{
+    width: 338px;
+
+    align-self: flex-end;
+}
+.siz36{
+    font-size: 36px;
+}
+.head1{
+    font-size: 16px; 
+    font-family: Inter_Regular;
+    color: #271F3F;
+}
+
+
+
+
+.show{
+    grid-area: five;
+    height: auto;
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+    grid-template-rows:  0.14fr 1fr;
+    grid-template-areas: 
+    "text text text text text"
+    "show1 show2 show3 show4 show5";  
+}
+.show h4:first-child{
+    grid-area: text;
+}
+.show a:nth-child(2){
+    grid-area: show1;
+}
+.show a:nth-child(3){
+    grid-area: show2;
+}
+.show a:nth-child(4){
+    grid-area: show3;
+}
+.show a:nth-child(5){
+    grid-area: show4;
+}
+.show a:nth-child(6){
+    grid-area: show5;
+}

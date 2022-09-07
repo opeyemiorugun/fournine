@@ -1,0 +1,25 @@
+button{
+    background-color: #D33C5C;
+    transition-duration: 7s;
+    border:1px solid  #D33C5C;
+    font-family: Inter_SemiBold;
+    font-size: 20px;
+    color: #ffffff;
+    a {
+        text-decoration: none;
+        color: white;    
+    }
+    :hover{
+        background-color: white;
+        color: #D33C5C;
+    }
+}
+// LIKE FUNCTIONS IN ...
+@mixin font ($size){
+    font-family: Playfair_Display_Bold;
+    color: #D33C5C;
+    font-size: $size 
+}
+.headline{
+    @include font(34px)
+}
